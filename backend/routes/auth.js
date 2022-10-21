@@ -13,7 +13,7 @@ router.post(
     "/createuser",
     [
         body("email", "Enter a valid email").isEmail(),
-        body("password", "Enter a valid password").isLength({ min: 8 }),
+        body("password", "Enter a valid password").isLength({ min: 5 }),
         body("name", "Password must be at least 8 charecters").isLength({
             min: 5,
         }),
